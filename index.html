@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IFT Group 6</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Hero Video Section -->
+  <section class="hero">
+    <div class="video-container">
+      <video autoplay muted playsinline id="heroVideo">
+        <source src="assets/videos/marvel-intro.mp4" type="video/mp4">
+        <img src="assets/images/fallback-bg.jpg" alt="Marvel Background" class="fallback-image">
+      </video>
+      <div class="overlay"></div>
+    </div>
+    <div class="hero-content">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png" alt="Marvel Logo" class="marvel-logo">
+      <h1>Multimedia Mini Project</h1>
+      <button id="playBtn" class="cta-btn pulse">
+        <i class="fas fa-play"></i> Watch Trailer
+      </button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h2>Welcome to the Marvel Cinematic Universe</h2>
+      <p>Experience the next chapter of Earth's Mightiest Heroes as we expand into new dimensions and introduce legendary characters to our interconnected storytelling universe.</p>
+      <div class="stats">
+        <div class="stat-item">
+          <span class="number">30+</span>
+          <span class="label">Films</span>
+        </div>
+        <div class="stat-item">
+          <span class="number">10</span>
+          <span class="label">Phases</span>
+        </div>
+        <div class="stat-item">
+          <span class="number">1</span>
+          <span class="label">Universe</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Movies Section -->
+  <section class="movies">
+    <div class="container">
+      <h2>Upcoming Movies</h2>
+      <div class="movie-grid">
+        <div class="movie-card">
+          <div class="poster-container">
+            <img src="assets/images/poster1.jpeg" alt="Movie Poster">
+            <div class="overlay-info">
+              <h3>Avengers: Endgame</h3>
+              <p>May 2026</p>
+              <button class="info-btn"><i class="fas fa-info-circle"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="poster-container">
+            <img src="assets/images/poster2.jpeg" alt="Movie Poster">
+            <div class="overlay-info">
+              <h3>Deadpool & Wolverine</h3>
+              <p>October 2025</p>
+              <button class="info-btn"><i class="fas fa-info-circle"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="poster-container">
+            <img src="assets/images/poster3.jpeg" alt="Movie Poster">
+            <div class="overlay-info">
+              <h3> Fantastic 4</h3>
+              <p>August 2026</p>
+              <button class="info-btn"><i class="fas fa-info-circle"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="poster-container">
+            <img src="assets/images/poster5.jpeg" alt="Movie Poster">
+            <div class="overlay-info">
+              <h3>X-men 97</h3>
+              <p>June 2023</p>
+              <button class="info-btn"><i class="fas fa-info-circle"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button id="teamBtn" class="cta-btn outline">
+        <i class="fas fa-users"></i> Meet Our Team
+      </button>
+    </div>
+  </section>
+
+  <!-- Audio Element -->
+  <audio id="bgAudio" loop>
+    <source src="assets/audio/ambiance.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Team Modal -->
+  <div id="teamModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Group 6 Members</h3>
+        <button class="close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Team members injected here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
